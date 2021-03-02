@@ -10,7 +10,10 @@ PRODUCT_PACKAGES += \
 
 # Seedvault
 PRODUCT_PACKAGES += \
-    Seedvault \
+    Seedvault
+
+# AuroraStore
+PRODUCT_PACKAGES += \
     AuroraStore \
     AuroraServices
     
