@@ -14,6 +14,7 @@ git clone https://github.com/rattlesnakeos/community_patches "${community_patche
 patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00001-global-internet-permission-toggle.patch"
 patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00002-round-icon.patch"
 patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00003-enable-volte-wifi-calling.patch"
+patch -p1 --no-backup-if-mismatch < "${community_patches_dir}/00007-set-seedvault-as-dftl-bkp-provider.patch"
 
 # apply custom hosts file
 custom_hosts_file="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
