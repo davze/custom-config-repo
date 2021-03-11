@@ -62,7 +62,7 @@ gn gen out/Default
 # Clone Bromite repo
 echo "Cloning Bromite repository"
 bromite_dir="${ROOT_DIR}/bromite"
-git clone --branch 88.0.4324.185 https://github.com/bromite/bromite.git "${bromite_dir}"
+git clone --branch master https://github.com/bromite/bromite.git "${bromite_dir}"
 cd "${CHROMIUM_BUILD_DIR}/src"
 
 
