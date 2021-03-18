@@ -2,7 +2,6 @@
 <manifest>
   <remote name="personal-remote" fetch="https://github.com/davze/" />
   <remote name="seedvault-app" fetch="https://github.com/seedvault-app/" />
-  <remote name="aurorastore" fetch="https://github.com/davze/" />
 
   <!-- this custom repo - do not change path -->
   <project path="vendor/custom" name="custom-config-repo" remote="personal-remote" revision="11.0"/>
@@ -14,6 +13,6 @@
   <project path="external/seedvault" name="seedvault" remote="seedvault-app" revision="b08b1f55f7936e954c750719fb526e26b8ffa609" />
   
   <!-- Aurora Store from lephyrus repo-->
-  <project path="prebuilts/aurorastore" name="ros-aurora-store" remote="aurorastore" clone-depth="1" revision="master />
-
+  <project path="prebuilts/aurorastore" name="ros-aurora-store" remote="personal-remote" clone-depth="1" revision="master" />
+      
 </manifest>
