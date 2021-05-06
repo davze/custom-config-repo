@@ -2,7 +2,8 @@
 <manifest>
   <remote name="personal-remote" fetch="https://github.com/davze/" />
   <remote name="seedvault-app" fetch="https://github.com/seedvault-app/" />
-
+  <remote name="grapheneos" fetch="https://github.com/grapheneos/" revision="11" />
+  
   <!-- this custom repo - do not change path -->
   <project path="vendor/custom" name="custom-config-repo" remote="personal-remote" revision="11.0"/>
 
@@ -12,7 +13,13 @@
   <!-- seedvault pinned to a specific revision -->
   <project path="external/seedvault" name="seedvault" remote="seedvault-app" revision="28f944731788b09f9ae0590bf3c9b97cb8d6bf76" />
   
-  <!-- Aurora Store from lephyrus repo-->
+  <!-- Aurora Store repo-->
   <project path="prebuilts/aurorastore" name="ros-aurora-store" remote="personal-remote" clone-depth="1" revision="master" />
       
+  
+   <!-- vanadium prebuilt -->
+  <project path="external/vanadium" name="platform_external_vanadium" remote="grapheneos" clone-depth="1" />
+  <remove-project name="platform/external/chromium-webview" />
+  <remove-project name="platform/packages/apps/Browser2" />
+  <remove-project name="platform/packages/apps/QuickSearchBox" />
 </manifest>
